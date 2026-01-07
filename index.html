@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta charset="UTF-8">
+<title>MOBI FF LEGACY 🔥📱</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+  background: #0b0b0b;
+  color: #fff;
+  text-align: center;
+  overflow-x: hidden;
+}
+
+h1{
+  margin-top: 30px;
+  font-size: 36px;
+  color: #ff2d2d;
+  text-shadow: 0 0 10px #ff0000;
+}
+
+.container{
+  max-width: 900px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+.btn-main{
+  background: #ff2d2d;
+  color: #fff;
+  padding: 18px 30px;
+  font-size: 20px;
+  border: none;
+  border-radius: 12px;
+  cursor: pointer;
+  box-shadow: 0 0 15px #ff2d2d;
+  transition: 0.3s;
+}
+
+.btn-main:hover{
+  transform: scale(1.05);
+  box-shadow: 0 0 25px #ff0000;
+}
+
+.btn-desc{
+  margin-top: 15px;
+  background: transparent;
+  color: #ff2d2d;
+  border: 1px solid #ff2d2d;
+  padding: 8px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.desc-box{
+  display: none;
+  margin-top: 15px;
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  border: 1px solid #ff2d2d;
+  font-style: italic;
+}
+
+.rules{
+  text-align: left;
+  margin-top: 40px;
+  background: #111;
+  padding: 20px;
+  border-radius: 15px;
+  border: 1px solid #ff2d2d;
+}
+
+.rules h2{
+  text-align: center;
+  color: #ff2d2d;
+  margin-bottom: 15px;
+}
+
+/* BOLINHAS ANIMADAS */
+.ball{
+  position: fixed;
+  width: 10px;
+  height: 10px;
+  background: red;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: float 8s linear infinite;
+}
+
+@keyframes float{
+  from{
+    transform: translateY(100vh);
+  }
+  to{
+    transform: translateY(-10vh);
+  }
+}
+
+/* TEXTO PASSANDO */
+.marquee{
+  position: fixed;
+  bottom: 10px;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.marquee span{
+  display: inline-block;
+  padding-left: 100%;
+  animation: marquee 12s linear infinite;
+  color: #ff2d2d;
+  font-weight: bold;
+}
+
+@keyframes marquee{
+  from{ transform: translateX(0); }
+  to{ transform: translateX(-100%); }
+}
+</style>
+</head>
+
+<body>
+
+<h1>MOBI FF LEGACY 🔥📱</h1>
+
+<div class="container">
+
+  <button class="btn-main" onclick="window.open('https://chat.whatsapp.com/FYu1fsKQcZu0YKFWCOcbLg')">
+    ENTRE NO MELHOR GRUPO DE MOBILADOR
+  </button>
+
+  <br>
+
+  <button class="btn-desc" onclick="toggleDesc()">Descrição</button>
+
+  <div class="desc-box" id="desc">
+    *_FOTO DO SETUP OBRIGATORIA, SEM FIGURINHA PORNO⚠️, APENAS MOBILADORES, RACISMO OU PRECONCEITO SERÁ BAN DIRETO♦️⚠️_*
+  </div>
+
+  <div class="rules">
+    <h2>📢📌 COMUNICADO OFICIAL – REGRAS DA GUILDA (📱 MOBILADOR) 📌📢</h2>
+
+    <p><b>1️⃣ REQUISITOS DE ENTRADA 🚪📱</b><br>
+    — ✅ Permitida a entrada SOMENTE de MOBILADORES<br>
+    — ❗ Jogadores que não forem mobiladores deverão ajudar a guilda a subir de nível</p><br>
+
+    <p><b>2️⃣ PONTUAÇÃO MÍNIMA 🔥📊</b><br>
+    — 🎯 Mínimo de 1000 pontos por semana<br>
+    — ⚠️ Advertência ou remoção ❌</p><br>
+
+    <p><b>3️⃣ INATIVIDADE ⏳🚫</b><br>
+    — 🕒 7 dias sem atividade = BANIMENTO 🚫<br>
+    — 📝 Ausências devem ser avisadas</p><br>
+
+    <p><b>4️⃣ GUERRA DE GUILDA ⚔️🔥</b><br>
+    — ⚠️ Participação OBRIGATÓRIA<br>
+    — ❌ Falta sem justificativa = infração grave</p><br>
+
+    <p><b>5️⃣ CONDUTA E RESPEITO 🤝🛡️</b><br>
+    — 🚫 Desrespeito não será tolerado</p><br>
+
+    <p><b>6️⃣ COMPROMISSO 🧠📌</b><br>
+    — 💪 Foco em evolução coletiva</p><br>
+
+    <p><b>7️⃣ COMO INGRESSAR 📨✅</b><br>
+    — ✍️ Digite “EU” no chat</p>
+  </div>
+
+</div>
+
+<div class="marquee">
+  <span>🔥 MELHOR GRUPO DE MOBILADOR 🤝 🔥 MELHOR GRUPO DE MOBILADOR 🤝 🔥</span>
+</div>
+
+<script>
+function toggleDesc(){
+  const d = document.getElementById("desc");
+  d.style.display = d.style.display === "block" ? "none" : "block";
+}
+
+// criar bolinhas
+for(let i=0;i<30;i++){
+  const ball = document.createElement("div");
+  ball.className = "ball";
+  ball.style.left = Math.random()*100 + "vw";
+  ball.style.animationDuration = (5 + Math.random()*10) + "s";
+  document.body.appendChild(ball);
+}
+</script>
+
+</body>
+  </html>
